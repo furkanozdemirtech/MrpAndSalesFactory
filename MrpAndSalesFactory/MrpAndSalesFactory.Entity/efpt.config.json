@@ -1,0 +1,336 @@
+﻿{
+   "CodeGenerationMode": 1,
+   "ContextClassName": "MRPANDSALESFACTORContext",
+   "ContextNamespace": null,
+   "DefaultDacpacSchema": null,
+   "FilterSchemas": false,
+   "IncludeConnectionString": false,
+   "ModelNamespace": null,
+   "OutputContextPath": null,
+   "OutputPath": "Models",
+   "PreserveCasingWithRegex": true,
+   "ProjectRootNamespace": "MrpAndSalesFactory.Entity",
+   "Schemas": null,
+   "SelectedHandlebarsLanguage": 0,
+   "SelectedToBeGenerated": 2,
+   "Tables": [
+      {
+         "Name": "[dbo].[ADRES]",
+         "ObjectType": 0
+      },
+      {
+         "Name": "[dbo].[CARI]",
+         "ObjectType": 0
+      },
+      {
+         "Name": "[dbo].[CARI_AYLIK]",
+         "ObjectType": 0
+      },
+      {
+         "Name": "[dbo].[CARI_FIS]",
+         "ObjectType": 0
+      },
+      {
+         "Name": "[dbo].[CARI_HAREKET]",
+         "ObjectType": 0
+      },
+      {
+         "Name": "[dbo].[DEPO]",
+         "ObjectType": 0
+      },
+      {
+         "Name": "[dbo].[DESENMALIYET]",
+         "ObjectType": 0
+      },
+      {
+         "Name": "[dbo].[DOVIZHAREKET]",
+         "ObjectType": 0
+      },
+      {
+         "Name": "[dbo].[ERP_ALT_ISEMRI]",
+         "ObjectType": 0
+      },
+      {
+         "Name": "[dbo].[ERP_ALT_ISEMRI_DETAY]",
+         "ObjectType": 0
+      },
+      {
+         "Name": "[dbo].[ERP_ISEMRI]",
+         "ObjectType": 0
+      },
+      {
+         "Name": "[dbo].[ERP_SEVK_EMRI]",
+         "ObjectType": 0
+      },
+      {
+         "Name": "[dbo].[ERP_SEVK_EMRI_DETAY]",
+         "ObjectType": 0
+      },
+      {
+         "Name": "[dbo].[ERP_STOK_AMBALAJ]",
+         "ObjectType": 0
+      },
+      {
+         "Name": "[dbo].[ERP_STOK_MALIYET]",
+         "ObjectType": 0
+      },
+      {
+         "Name": "[dbo].[ERP_STOK_OZELLIK]",
+         "ObjectType": 0
+      },
+      {
+         "Name": "[dbo].[ERP_STOK_VARYANT]",
+         "ObjectType": 0
+      },
+      {
+         "Name": "[dbo].[ERP_TEDARIKCI]",
+         "ObjectType": 0
+      },
+      {
+         "Name": "[dbo].[ERP_TEZGAH]",
+         "ObjectType": 0
+      },
+      {
+         "Name": "[dbo].[ERP_TEZGAH_MALIYET]",
+         "ObjectType": 0
+      },
+      {
+         "Name": "[dbo].[ERP_URETIM_DURUS]",
+         "ObjectType": 0
+      },
+      {
+         "Name": "[dbo].[ERP_URETIM_FISI]",
+         "ObjectType": 0
+      },
+      {
+         "Name": "[dbo].[ERP_URETIM_FISI_DETAY]",
+         "ObjectType": 0
+      },
+      {
+         "Name": "[dbo].[ERP_URETIM_OPERASYON]",
+         "ObjectType": 0
+      },
+      {
+         "Name": "[dbo].[ERP_URETIM_PANEL]",
+         "ObjectType": 0
+      },
+      {
+         "Name": "[dbo].[ERP_URETIM_PANEL_DURUM]",
+         "ObjectType": 0
+      },
+      {
+         "Name": "[dbo].[ERP_URETIM_PANEL_OPERASYON]",
+         "ObjectType": 0
+      },
+      {
+         "Name": "[dbo].[ERP_URUN_AGACI]",
+         "ObjectType": 0
+      },
+      {
+         "Name": "[dbo].[ERP_URUN_AGACI_DETAY]",
+         "ObjectType": 0
+      },
+      {
+         "Name": "[dbo].[ERP_URUN_AGACI_KOMBINI]",
+         "ObjectType": 0
+      },
+      {
+         "Name": "[dbo].[ERP_VARYANT]",
+         "ObjectType": 0
+      },
+      {
+         "Name": "[dbo].[ERP_VARYANT_DETAY]",
+         "ObjectType": 0
+      },
+      {
+         "Name": "[dbo].[ERP_VARYANT_OLCU]",
+         "ObjectType": 0
+      },
+      {
+         "Name": "[dbo].[FATURA]",
+         "ObjectType": 0
+      },
+      {
+         "Name": "[dbo].[FIRMALAR]",
+         "ObjectType": 0
+      },
+      {
+         "Name": "[dbo].[FIYAT]",
+         "ObjectType": 0
+      },
+      {
+         "Name": "[dbo].[GRUP]",
+         "ObjectType": 0
+      },
+      {
+         "Name": "[dbo].[HIZLI_SATIS_TANIM]",
+         "ObjectType": 0
+      },
+      {
+         "Name": "[dbo].[KUR_BAGLANTI1]",
+         "ObjectType": 0
+      },
+      {
+         "Name": "[dbo].[KUR_BAGLANTI2]",
+         "ObjectType": 0
+      },
+      {
+         "Name": "[dbo].[KURGIRIS]",
+         "ObjectType": 0
+      },
+      {
+         "Name": "[dbo].[LOGINFO]",
+         "ObjectType": 0
+      },
+      {
+         "Name": "[dbo].[PAKET]",
+         "ObjectType": 0
+      },
+      {
+         "Name": "[dbo].[PAKETDEGER]",
+         "ObjectType": 0
+      },
+      {
+         "Name": "[dbo].[PAKETONAY]",
+         "ObjectType": 0
+      },
+      {
+         "Name": "[dbo].[PERSONEL]",
+         "ObjectType": 0
+      },
+      {
+         "Name": "[dbo].[RAPOR]",
+         "ObjectType": 0
+      },
+      {
+         "Name": "[dbo].[SATINALMA_SOZ_CIRO]",
+         "ObjectType": 0
+      },
+      {
+         "Name": "[dbo].[SATINALMA_SOZ_CIRO_DETAY]",
+         "ObjectType": 0
+      },
+      {
+         "Name": "[dbo].[SATINALMA_SOZ_CIRO_STOK]",
+         "ObjectType": 0
+      },
+      {
+         "Name": "[dbo].[SATINALMA_SOZ_HAREKET]",
+         "ObjectType": 0
+      },
+      {
+         "Name": "[dbo].[SATINALMA_SOZLESME_FIS]",
+         "ObjectType": 0
+      },
+      {
+         "Name": "[dbo].[SATIS]",
+         "ObjectType": 0
+      },
+      {
+         "Name": "[dbo].[SEVKIYAT]",
+         "ObjectType": 0
+      },
+      {
+         "Name": "[dbo].[SEVKIYATDETAY]",
+         "ObjectType": 0
+      },
+      {
+         "Name": "[dbo].[SEVKIYATTAMAMLAMA]",
+         "ObjectType": 0
+      },
+      {
+         "Name": "[dbo].[SIPARIS]",
+         "ObjectType": 0
+      },
+      {
+         "Name": "[dbo].[STOK]",
+         "ObjectType": 0
+      },
+      {
+         "Name": "[dbo].[TEKLIF]",
+         "ObjectType": 0
+      },
+      {
+         "Name": "[dbo].[TEKLIF_HAR]",
+         "ObjectType": 0
+      },
+      {
+         "Name": "[dbo].[TEKLIF_YETKI]",
+         "ObjectType": 0
+      },
+      {
+         "Name": "[dbo].[URETIM_TEKSTIL_PARCA]",
+         "ObjectType": 0
+      },
+      {
+         "Name": "[dbo].[URT_CIZIM]",
+         "ObjectType": 0
+      },
+      {
+         "Name": "[dbo].[URT_CIZIM_SURE]",
+         "ObjectType": 0
+      },
+      {
+         "Name": "[dbo].[URT_DURUM]",
+         "ObjectType": 0
+      },
+      {
+         "Name": "[dbo].[URT_KATEGORI_ALT_GRUP]",
+         "ObjectType": 0
+      },
+      {
+         "Name": "[dbo].[URT_KATEGORI_UST_GRUP]",
+         "ObjectType": 0
+      },
+      {
+         "Name": "[dbo].[URT_MAKINE]",
+         "ObjectType": 0
+      },
+      {
+         "Name": "[dbo].[URT_MAKINE_DEGER]",
+         "ObjectType": 0
+      },
+      {
+         "Name": "[dbo].[URT_SEVK_BIRIM]",
+         "ObjectType": 0
+      },
+      {
+         "Name": "[dbo].[URT_VARDIYA]",
+         "ObjectType": 0
+      },
+      {
+         "Name": "[dbo].[USERS]",
+         "ObjectType": 0
+      },
+      {
+         "Name": "[dbo].[YETKI]",
+         "ObjectType": 0
+      },
+      {
+         "Name": "[dbo].[YETKIKODU]",
+         "ObjectType": 0
+      },
+      {
+         "Name": "[dbo].[YETKILI]",
+         "ObjectType": 0
+      }
+   ],
+   "UiHint": "DESKTOP-2A7EUI3\\SQLEXPRESS.MRPANDSALESFACTOR",
+   "UncountableWords": null,
+   "UseBoolPropertiesWithoutDefaultSql": false,
+   "UseDatabaseNames": false,
+   "UseDbContextSplitting": false,
+   "UseFluentApiOnly": true,
+   "UseHandleBars": false,
+   "UseHierarchyId": false,
+   "UseInflector": false,
+   "UseLegacyPluralizer": false,
+   "UseManyToManyEntity": false,
+   "UseNoDefaultConstructor": false,
+   "UseNoObjectFilter": false,
+   "UseNodaTime": false,
+   "UseNullableReferences": false,
+   "UseSchemaFolders": false,
+   "UseSpatial": false,
+   "UseT4": false
+}

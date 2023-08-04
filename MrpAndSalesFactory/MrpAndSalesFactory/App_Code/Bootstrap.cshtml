@@ -1,0 +1,39 @@
+﻿
+
+@helper Button(string color = "", string addtionalClass = "", string typ = "button", string icon = "", string text = "")
+{
+    <button type="@typ" class="btn btn-@color @addtionalClass">
+        <span class="glyphicon glyphicon-@icon"></span>@text
+    </button>
+}
+
+@helper TextFormInput(string id = "", string type = "text", string palaceholder = "")
+{
+    <input type="@type" class="form-control" id="@id" placeholder="@palaceholder">
+}
+
+@helper ForOptipns(string id="",string Text="")
+    {
+    <option id="@id">@Text</option>
+    }
+
+@helper SelectFormInput(string id = "",List<SelectListItem> datalist=null)
+{
+   <select class="form-select mb-3">
+       @foreach (SelectListItem item in datalist)
+       {
+
+           if (item == null) { continue; }
+           <option id="@item.Value">@item.Text</option>
+           //ForOptipns(item.Value, item.Text);
+
+           //foreach (System.Reflection.PropertyInfo property in item.GetType().GetProperties())
+           // {
+           //    @ForOptipns(property.Name,Convert.ToString(property.GetValue(item)))
+
+           // }
+
+       }
+
+   </select>
+}

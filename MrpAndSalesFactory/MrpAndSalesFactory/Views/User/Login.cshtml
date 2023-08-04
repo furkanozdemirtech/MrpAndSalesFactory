@@ -1,0 +1,129 @@
+﻿@using MrpAndSalesFactory.Entity.ValueObject
+@model  FillUserObjectsLogin
+
+@{
+    ViewBag.Title = "Ürün Takip- Giriş Yap";
+}
+
+<!DOCTYPE html>
+<html>
+
+<head>
+    <meta charset="utf-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta content="Coderthemes" name="author" />
+    <!-- App favicon -->
+    <link rel="shortcut icon" href="assets/images/favicon.ico">
+
+    <!-- App css -->
+    <link href="/Content/assets/css/icons.min.css" rel="stylesheet" type="text/css" />
+    <link href="/Content/assets/css/app.min.css" rel="stylesheet" type="text/css" id="light-style" />
+    <link href="/Content/assets/css/app-dark.min.css" rel="stylesheet" type="text/css" id="dark-style" />
+
+    <script src="~/Scripts/jquery-3.6.3.min.js"></script>
+    <script src="~/Scripts/jquery.unobtrusive-ajax.min.js"></script>
+    <script src="~/Scripts/jquery.unobtrusive-ajax.js"></script>
+    <script src="~/Scripts/jquery.validate.min.js"></script>
+    <script src="~/Scripts/jquery.validate.unobtrusive.min.js"></script>
+</head>
+
+    <body class="authentication-bg pb-0" data-layout-config='{"darkMode":true}'>
+
+        <div class="auth-fluid">
+            <!--Auth fluid left content -->
+            <div class="auth-fluid-form-box">
+                <div class="align-items-center d-flex h-100">
+                    <div class="card-body">
+
+                        <!-- Logo -->
+                        <div class="auth-brand text-center text-lg-start">
+                            <a href="index.html" class="logo-dark">
+                                <span><img src="/Content/assets/images/logo-dark.png" alt="" height="18"></span>
+                            </a>
+                            <a href="index.html" class="logo-light">
+                                <span><img src="/Content/assets/images/logo.png" alt="" height="18"></span>
+                            </a>
+                        </div>
+
+                        <!-- title-->
+                        <h4 class="mt-0">Giriş Yap</h4>
+                        <p class="text-muted mb-4">Firma adı,kullanıcı kodu,şifre bilgisini giriniz!</p>
+
+                        <!-- form -->
+                        @using (Html.BeginForm())
+                        {
+                            @Html.AntiForgeryToken()
+                          
+                            @Html.ValidationSummary(true,"", new {@class="alert alert-danger validation-summary"} )  
+                            <div class="form-group">
+                                <label class="form-label">Firma Adı</label>
+                                <div class="col-md-10">
+                                    @Html.TextBoxFor(model => model.CompanyName, new { @class = "form-control", placeholder = "Firma adınızı giriniz!" })
+                                    @Html.ValidationMessageFor(model=>model.CompanyName,"",new {@class="text-danger"})
+                                </div>
+                                
+                            </div>
+                            <div class="mb-3">
+                                <label class="form-label">Kullanıcı Adı </label>
+                                @Html.TextBoxFor(model => model.Username, new { @class = "form-control", placeholder = "Kullanıcı adı giriniz!" })
+                            </div>
+                            <div class="mb-3">
+                                <label class="form-label">Kullanıcı Şifre </label>
+                                @Html.TextBoxFor(model => model.Password, new { @class = "form-control", placeholder = "Kullanıcı şifre giriniz!",type="password" })
+                            </div>
+                            <div class="d-grid mb-0 text-center">
+                                <button class="btn btn-primary" type="submit"><i class="mdi mdi-login"></i> Giriş Yap </button>
+                            </div>
+                            <!-- social-->
+                            <div class="text-center mt-4">
+              
+                                <ul class="social-list list-inline mt-3">
+                                    <li class="list-inline-item">
+                                        <a href="javascript:void(0);" class="social-list-item border-primary text-primary"><i class="mdi mdi-facebook"></i></a>
+                                    </li>
+                                    <li class="list-inline-item">
+                                        <a href="javascript:void(0);" class="social-list-item border-danger text-danger"><i class="mdi mdi-google"></i></a>
+                                    </li>
+                                    <li class="list-inline-item">
+                                        <a href="javascript:void(0);" class="social-list-item border-info text-info"><i class="mdi mdi-twitter"></i></a>
+                                    </li>
+                                    <li class="list-inline-item">
+                                        <a href="javascript:void(0);" class="social-list-item border-secondary text-secondary"><i class="mdi mdi-github"></i></a>
+                                    </li>
+                                </ul>
+                            </div>
+                        }
+
+                        <!-- end form-->
+                        <!-- Footer-->
+                        <footer class="footer footer-alt">
+
+                        </footer>
+
+                    </div> <!-- end .card-body -->
+                </div> <!-- end .align-items-center.d-flex.h-100-->
+            </div>
+            <!-- end auth-fluid-form-box-->
+
+            <!-- Auth fluid right content -->
+            <div class="auth-fluid-right text-center">
+                <div class="auth-user-testimonial">
+                    <h2 class="mb-3">I love the color!</h2>
+                    <p class="lead"><i class="mdi mdi-format-quote-open"></i> It's a elegent templete. I love it very much! . <i class="mdi mdi-format-quote-close"></i>
+                    </p>
+                    <p>
+                        - Hyper Admin User
+                    </p>
+                </div> <!-- end auth-user-testimonial-->
+            </div>
+            <!-- end Auth fluid right content -->
+        </div>
+        <!-- end auth-fluid-->
+
+        <!-- bundle -->
+        <script src="/Content/assets/js/vendor.min.js"></script>
+        <script src="/Content/assets/js/app.min.js"></script>
+
+    </body>
+
+</html>

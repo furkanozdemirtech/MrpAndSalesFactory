@@ -1,0 +1,184 @@
+﻿@using MrpAndSalesFactory.Entity;
+@using MrpAndSalesFactory.BusinessLayer
+@using MrpAndSalesFactory.Entity.Models
+@using System.Web.WebPages.Html
+@using Tools
+@model  MrpAndSalesFactory.Entity.Models.Cari
+
+
+@{
+    ViewBag.Title = "Create";
+    var testlist = new List<MrpAndSalesFactory.Entity.Models.Cari>
+    {
+        new Cari{Id=0,Adi="Furkan"},
+        new Cari{Id=1,Adi="Türkan"},
+        new Cari{Id=2,Adi="İzzet"}
+    };
+    List<System.Web.WebPages.Html.SelectListItem> selectList = testlist.ToSelectList(nameof(Cari.Id), nameof(Cari.Adi));
+
+    SelectList dataexample = Tools.CustomerType.Satici.ToEnumSelectList();
+    List<string> customertype =Enum.GetValues(typeof(Tools.CustomerType)).Cast<Tools.CustomerType>()
+        .Select(v=>v.ToString()).ToList();
+}
+
+
+
+
+
+<div class="row">
+    <div class="col-12">
+        <div class="card">
+            <div class="card-body">
+                <h4 class="header-title">Cari Kayıt Bilgisi</h4>
+                <p class="text-muted font-14">Cari fatura adres nufus ve genel bilgileri </p>
+                <div class="row">
+                    <div class="col-6">
+                        <div class="mb-3">
+                            <label class="form-label" for="validationCustom01">Cari Kodu</label>
+                            @Bootstrap.TextFormInput("", "text", "Cari Kod")
+
+                        </div>
+                    </div>
+                    <div class="col-6">
+                        <div class="mb-3">
+                            <label class="form-label" for="validationCustom01">Cari Tip</label>
+                            @*@Bootstrap.SelectFormInput("",selectList)*@
+                            <select>
+                                @foreach (var item in data)
+                                {
+                                    <option>@item</option>
+                                }
+                            </select>
+                        </div>
+                    </div>
+                </div>
+
+
+                <ul class="nav nav-pills nav-justified form-wizard-header mb-4">
+                    <li class="nav-item">
+                        <a href="#nufus" data-bs-toggle="tab" data-toggle="tab" class="nav-link rounded-0 pt-2 pb-2 active">
+                            <i class="mdi mdi-bag-personal-outline me-1"></i>
+                            <span class="d-none d-sm-inline">Nufus&nbsp;Bilgiler</span>
+                        </a>
+                    </li>
+                    <li class="nav-item">
+                        <a href="#ticari" data-bs-toggle="tab" data-toggle="tab" class="nav-link rounded-0 pt-2 pb-2">
+                            <i class="mdi mdi-cash me-1"></i>
+                            <span class="d-none d-sm-inline">Ticari&nbsp;Bilgiler</span>
+                        </a>
+                    </li>
+                    <li class="nav-item">
+                        <a href="#banka" data-bs-toggle="tab" data-toggle="tab" class="nav-link rounded-0 pt-2 pb-2">
+                            <i class="mdi mdi-bank me-1"></i>
+                            <span class="d-none d-sm-inline">Banka&nbsp;Bilgiler</span>
+                        </a>
+                    </li>
+                    <li class="nav-item">
+                        <a href="#ozelalan" data-bs-toggle="tab" data-toggle="tab" class="nav-link rounded-0 pt-2 pb-2">
+                            <i class="mdi mdi-spellcheck me-1"></i>
+                            <span class="d-none d-sm-inline">Özel&nbsp;Alanlar</span>
+                        </a>
+                    </li>
+                    <li class="nav-item">
+                        <a href="#notlar" data-bs-toggle="tab" data-toggle="tab" class="nav-link rounded-0 pt-2 pb-2">
+                            <i class="mdi mdi-note me-1"></i>
+                            <span class="d-none d-sm-inline">&nbsp;Notlar&nbsp;&nbsp;&nbsp;</span>
+                        </a>
+                    </li>
+                    <li class="nav-item">
+                        <a href="#digercari" data-bs-toggle="tab" data-toggle="tab" class="nav-link rounded-0 pt-2 pb-2">
+                            <i class="mdi mdi-checkbox-marked-circle-outline me-1"></i>
+                            <span class="d-none d-sm-inline">Diger&nbsp;Cari&nbsp;Değerleri</span>
+                        </a>
+                    </li>
+
+
+                </ul>
+
+                <div class="tab-content">
+
+                    <div class="tab-pane active" id="nufus">
+                        <div class="row">
+                            <div class="col-lg-6">
+                                @*adresform*@
+                                nufus
+                            </div> <!-- end col -->
+
+                            <div class="col-lg-6">
+
+                            </div> <!-- end col -->
+                        </div> <!-- end row -->
+                    </div> <!-- end preview-->
+                    <div class="tab-pane" id="ticari">
+                        <div class="row">
+                            <div class="col-lg-6">
+                                ticari
+                                @*adresform*@
+
+                            </div> <!-- end col -->
+
+                            <div class="col-lg-6">
+
+                            </div> <!-- end col -->
+                        </div> <!-- end row -->
+                    </div>
+                    <div class="tab-pane" id="banka">
+                        <div class="row">
+                            <div class="col-lg-6">
+                                banka
+                                @*adresform*@
+
+                            </div> <!-- end col -->
+
+                            <div class="col-lg-6">
+
+                            </div> <!-- end col -->
+                        </div> <!-- end row -->
+                    </div>
+                    <div class="tab-pane" id="ozelalan">
+                        <div class="row">
+                            <div class="col-lg-6">
+                                ozel alan
+                                @*adresform*@
+
+                            </div> <!-- end col -->
+
+                            <div class="col-lg-6">
+
+                            </div> <!-- end col -->
+                        </div> <!-- end row -->
+                    </div>
+                    <div class="tab-pane" id="notlar">
+                        <div class="row">
+                            <div class="col-lg-6">
+                                notlar
+                                @*adresform*@
+
+                            </div> <!-- end col -->
+
+                            <div class="col-lg-6">
+
+                            </div> <!-- end col -->
+                        </div> <!-- end row -->
+                    </div>
+                    <div class="tab-pane" id="digercari">
+                        <div class="row">
+                            <div class="col-lg-6">
+                                diger cari işlemleri
+                                @*adresform*@
+
+                            </div> <!-- end col -->
+
+                            <div class="col-lg-6">
+
+                            </div> <!-- end col -->
+                        </div> <!-- end row -->
+                    </div>
+
+                </div> <!-- end tab-content-->
+
+            </div> <!-- end card-body-->
+        </div> <!-- end card-->
+    </div> <!-- end col-->
+</div>
+
